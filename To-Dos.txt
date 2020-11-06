@@ -1,0 +1,10 @@
+Responsiveness of index.html
+
+Logo on secondary sites
+
+Then have CV in spoiler
++ downloadable as pdf
+
+Contact: have PopubBox / Modal with email + linkedin
+
+

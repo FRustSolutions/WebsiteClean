@@ -1,0 +1,245 @@
+body{
+    color: darkslategray;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.5em;
+    margin:10px;
+}
+
+.container{
+    width: 80%;
+    margin:auto;
+    overflow:hidden;
+}
+
+
+#main-header{
+    background-image: url('../images/computerscience2.jpg');
+    background-position: top right;
+    color: white;
+    padding: 20px 0;
+}
+
+.logocontainter{
+    float: left;
+    width: 10%;
+    padding: 0px;
+    padding-top: 50px;
+    /* padding-left: 70px; */
+    position: center;
+}
+
+#navbar{
+    background-color: rgb(31, 37, 51);
+    color: white;
+    padding: 0;
+    border: solid 2px rgb(31, 37, 51);
+}
+
+#navbar ul{
+    padding: 0;
+    list-style: none;
+}
+
+#navbar li{
+    display:inline;
+}
+
+#navbar a{
+    color:white;
+    font-size: 18px;
+    padding-right: 15px;
+}
+
+#navbar a:hover{    /*Changes state when hovering over Link*/
+    color: rgb(241, 106, 106);
+}
+#navbar a:active{   /*Changes state when clicked on*/
+    color:	rgb(31, 37, 51)
+}
+
+.contactbut{
+    padding: 5px 10px;
+    padding-right: 0;
+    border: solid black 1px;
+    border-radius: 10%;
+    background-color: rgb(241, 106, 106); 
+}
+
+#navbar .contactbut a:hover{
+    color: rgb(43, 43, 43);
+}
+
+.button{
+    color: white;
+    font-size: 16px;
+    padding-right: 15px;
+    padding: 5px 10px;
+    /* padding-right: 0; */
+    border: solid black 1px;
+    border-radius: 10%;
+    background-color: rgb(241, 106, 106); 
+}
+
+.button:hover{
+    color: rgb(31, 37, 51);;
+}
+
+
+/* Showcase: */
+#showcase{
+    background-image: url('../images/lightgreyabs.jpg');
+    /* background-image: url('../images/computerscience.jpg'); */
+    background-position: center right;
+    min-height: 300px;  /*min-height so it can expand*/
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+#showcase h1{
+    color: lightcoral;
+    font-size: 50px;
+    line-height: 1.6em;
+    padding-top: 30px;
+}
+
+
+.container2{
+    width: 80%;
+    margin:auto;
+    padding-bottom: 0;
+    /* padding-left: 300px; */
+    overflow:hidden;
+    display:flex;
+    flex-wrap: wrap;
+}
+
+#main{
+    /* float:left;
+    width: 80%; */
+    flex:1 1 600px;
+    padding: 0 70px 10px 0;
+    box-sizing: border-box;
+}
+
+#sidebar{
+    flex: 1 1 0px;
+    padding-left: 200px;
+    padding-bottom: 0;
+    border-bottom: 2px solid lightgray;
+    border-right: 2px solid black;
+}
+
+
+#main-footer{
+    /* background-color: darkgray; */
+    font-family: 'Italic';
+    text-align: center;
+    padding: 10px;
+    margin-top: 40px;
+}
+
+/* Add a media query: condition: excecute if under 600px */
+@media(max-width:600px){
+    #main{
+        width: 100%;
+        float: none;
+    }
+    #sidebar{
+        width: 100%;
+        float: none;
+    }
+}
+
+/* About page: */
+.aboutdiv{
+    border: solid 1px darkgray;
+    /* border-radius: 1%; */
+    padding: 10px;
+    margin: 2px;
+}
+
+#skillheader{
+    text-align: center;
+    color: rgb(43, 43, 43);
+}
+.skills .top{
+    font-weight: 600;
+    padding-left: 0px;
+    list-style: none;
+    padding-bottom: 15px;
+}
+
+.skills{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: 1px gray solid;
+    /* padding: 10px; */
+    border-radius: 15px;    /*gives box curved edges*/
+}
+
+.list1{
+    flex:1 1 160px;
+    margin: 5px;
+}
+
+.performancelist{
+    padding: 40px;
+
+}
+
+/* Languages */
+
+.languages .flex {
+    flex-wrap: wrap;
+}
+
+.languages h2{
+    text-align: center;
+}
+
+.languages .card {
+    text-align: center;
+    margin: 18px 10px 40px;
+    transition: transform 0.2s ease-in;
+}
+
+.languages .card h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.languages .card:hover {
+    transform: translateY(-15px);
+}
+
+.card {
+    background-color: #fff;
+    color: #333;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin: 10px;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.container3 {
+    /* border: 1px solid black; */
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+    overflow: auto;
+    padding: 0;
+}
+
+.contactclass .card:hover{
+    transform: translateX(15px);
+}

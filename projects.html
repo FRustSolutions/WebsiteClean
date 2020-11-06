@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FrustSolutions</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <header id="main-header">
+        <div class="container">
+            <h1>Frank Rust Solutions</h1>
+        </div>
+    </header>
+    <hr>
+    <nav id="navbar">
+        <div class="container">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="about.html">About</a></li>
+                <li class='contactbut'><a id='contactref' href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Languages -->
+    <section class="languages">
+        <h2 class="md text-center my-2">
+            My Skills and Tools
+        </h2>
+        <div class="container3 flex">
+            <div class="card">
+                <h4>Python</h4>
+                <img src="images/logos/python.png" alt="">
+            </div>
+            <div class="card">
+                <h4>C++</h4>
+                <img src="images/logos/cpp.png" alt="">
+            </div>
+            <div class="card">
+                <h4>Java</h4>
+                <img src="images/logos/java.png" alt="">
+            </div>
+            <div class="card">
+                <h4>Eclipse</h4>
+                <img src="images/logos/Eclipse.png" alt="">
+            </div>
+            <div class="card">
+                <h4>VS Code</h4>
+                <img src="images/logos/VSCode.png" alt="">
+            </div>
+            <div class="card">
+                <h4>JavaScript</h4>
+                <img src="images/logos/js.png" alt="">
+            </div>
+            <div class="card">
+                <h4>Node.js</h4>
+                <img src="images/logos/node.png" alt="">
+            </div>
+            <div class="card">
+                <h4>HTML</h4>
+                <img src="images/logos/html.png" alt="">
+            </div>
+            <div class="card">
+                <h4>CSS</h4>
+                <img src="images/logos/css.png" alt="">
+            </div>
+            <div class="card">
+                <h4>Matlab/Simulink</h4>
+                <img src="images/logos/Matlab.png" alt="">
+                <br>
+            </div>
+        </div>
+    </section>
+
+
+    <h3 id="skillheader">This list provides a bit more detail:</h3>
+    <ul class="skills">
+        <div class="list1">
+            <li class="top">Software Development</li>
+            <li>C++</li>
+            <li>Java</li>
+            <li>Python</li>
+            <li>JacaScript</li>
+            <li>UML</li>
+        </div>
+        <div class="list1">
+            <li class="top">Web Development</li>
+            <li>HTML</li>
+            <li>CSS</li>
+        </div>
+        <div class="list1">
+            <li class="top">Control Systems</li>
+            <li>Control System Design</li>
+            <li>Matlab</li>
+            <li>Simulink</li>
+        </div>
+        <div class="list1">
+            <li class="top">Embedded Systems</li>
+            <li>VHDL</li>
+            <li>Verilog</li>
+            <li>Arduino</li>
+        </div>
+        <div class="list1">
+            <li class="top">Project Managemenet</li>
+            <li>MS Office</li>
+            <li>Product Managemenet</li>
+            <li>IT Management</li>
+        </div>
+        <div class="list1">
+            <li class="top">Languages</li>
+            <li>German</li>
+            <li>English</li>
+            <li>French</li>
+            <li>Spanish</li>
+        </div>
+    </ul>
+    
+    <br>
+    <h3 id="skillheader">And these are some of my recent projects that I worked on throughout the past year:</h3>
+    <hr>
+    <h3>1) Covid-19 detection on lung CTs: Combining Computer Vision and Deep Learning with Python</h3>
+    <p>One project I am especially proud of is the Covid-19 detector for lung CTs that I developed with Computer Vision and Deep Learning Tools in Python.</p>
+    <p>The official paper regarding this work will be published shortly. For now, take a look at the Detector output and its impressive accuracy of about 97%, which highly exceeds average radiologist performance:</p>
+    <details>
+        <img src="./images/Coviddetector2.png" alt="Oopsie">
+        <br>
+        <p>The CT images are pre-processed for segmentation and feature enhancement unsing Python in combination with OpenCV.</p>
+        <p>The pre-processed images were then used to train a Convolutional Neural Network (CNN) for the classification task using Pytorch.</p>
+        <p>Taking part at the public Covid-19 detection challenge at <a href="https://covid-ct.grand-challenge.org/CT-diagnosis-of-COVID-19/">grand-challenge.org</a>, the final model outperformed all candidates on the Leaderboard on the official test-set.</p>
+        <p>The final performance measurements for this task were:</p>
+
+        <ul class=performancelist">
+            <li>Total Accuracy:  0.9704</li>
+            <li>F1-Score:        0.9697</li>
+            <li>AUC:             0.9707</li>
+        </ul>
+    </details>
+    <hr>
+    <h3>2) Designing and Developing this website from scratch with JS, HTML & CSS</h3>
+    <details>
+        <p>You are currently looking at the result. I recently taught myself HTML and CSS and will keep improving and updating this site.</p>
+    </details>
+    <hr>
+    <h3>3) Control System Development with Matlab/Simulink</h3>
+    <details>
+        <p>Show some diagrams from Uni course + some Jetter stuff</p>
+        <img src="./images/projects/ControlDesign-1.png" alt="">
+        <img src="./images/projects/ControlDesign-2.png" alt="">
+    </details>
+    <hr>
+    <h3>4) Small Embedded System Design</h3>
+    <details>
+        <p>...</p>
+        <img src="./images/projects/SESshort-1.png" alt="">
+        <img src="./images/projects/SESshort-2.png" alt="">
+    </details>
+    <hr>
+    <h3>5) Trading Algorithm development with Deep Learning in Python</h3>
+    <details>
+        <p>[TOP SECRET]... and still needs some work.</p>
+    </details>
+    <hr>
+    <h3>6) Advent of Code with C/Java/JavaScript</h3>
+    <details>
+        <p>To keep my skills with C and Java programming fresh and improve my self-taught JavaScript skills in combination with Node JS, I am currently working thorugh the tasks at <a target="_blank" href="https://adventofcode.com/2019/about">AdventOfcode.com</a> .</p>
+        <p>I might be posting some of the interesting task results here or on Github.</p>
+    </details>
+    <hr>
+    <h3>7) Rock Paper Scissors Spock with Python and tkinter</h3>
+    <details>
+        <p>...</p>
+        <img src="./images/projects/PythonGame-1.png" alt="">
+    </details>
+</body>
+</html>
