@@ -140,14 +140,29 @@ body{
 }
 
 /* Add a media query: condition: excecute if under 600px */
-@media(max-width:600px){
+@media(max-width:800px){
+    #showcase{
+        padding-top: 30px;
+    }
     #main{
         width: 100%;
         float: none;
+        padding: 10px 0;
     }
     #sidebar{
         width: 100%;
         float: none;
+        display: inline;
+        padding-left: 10%;
+    }
+    .logocontainter{
+        display: inline;
+        /* border: solid 2px black; */
+        float: none;
+        padding-top: 200px;
+        margin-bottom: 0;
+        padding-bottom: 0;
+        margin-top: 200px;
     }
 }
 
