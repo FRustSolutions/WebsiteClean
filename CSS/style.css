@@ -15,6 +15,8 @@ body{
 
 #main-header{
     background-image: url('../images/computerscience2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
     background-position: top right;
     color: white;
     padding: 20px 0;
@@ -91,6 +93,8 @@ body{
     background-image: url('../images/lightgreyabs.jpg');
     /* background-image: url('../images/computerscience.jpg'); */
     background-position: center right;
+    background-repeat: no-repeat;
+    background-size: cover;
     min-height: 300px;  /*min-height so it can expand*/
     margin-bottom: 30px;
     text-align: center;
@@ -129,7 +133,13 @@ body{
     border-bottom: 2px solid lightgray;
     border-right: 2px solid black;
 }
-
+/* 
+.container .hover{
+    mask-image: ;
+            <div class="logocontainter">
+                <img class="logo" src="./images/FRsLogo9.png" alt="Error">
+            </div>
+} */
 
 #main-footer{
     /* background-color: darkgray; */
@@ -179,24 +189,29 @@ body{
     color: rgb(43, 43, 43);
 }
 .skills .top{
+    text-align: center;
     font-weight: 600;
-    padding-left: 0px;
-    list-style: none;
+    /* padding-left: 0px; */
+    /* list-style:      */
     padding-bottom: 15px;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-right: 20px;
 }
 
 .skills{
     display:flex;
     flex-wrap: wrap;
     justify-content: center;
-    border: 1px gray solid;
+    /* border: 1px gray solid; */
     /* padding: 10px; */
-    border-radius: 15px;    /*gives box curved edges*/
+    /* border-radius: 15x;    gives box curved edges */
 }
 
 .list1{
     flex:1 1 160px;
-    margin: 5px;
+    /* margin: 5px; */
 }
 
 .performancelist{
@@ -205,6 +220,10 @@ body{
 }
 
 /* Languages */
+
+#languages{
+    width: 100%
+}
 
 .languages .flex {
     flex-wrap: wrap;
@@ -249,7 +268,7 @@ body{
 .container3 {
     /* border: 1px solid black; */
     width: 100%;
-    max-width: 1600px;
+    /* max-width: 1900px; */
     margin: 0 auto;
     overflow: auto;
     padding: 0;
