@@ -205,20 +205,30 @@
 
     <p>&nbsp;&nbsp;&bull;CNN Design  &nbsp;&nbsp;&bull;CNN Training  &nbsp;&nbsp;&bull;TensorFlow  &nbsp;&nbsp;&bull;Keras &nbsp;&nbsp;&bull;Performance Evaluation  &nbsp;&nbsp;&bull;Training Optimization &nbsp;&nbsp;&bull;Hyperparameter Tuning &nbsp;&nbsp;&bull;TensorBoard  &nbsp;&nbsp;&bull;Model Deployment  &nbsp;&nbsp;&bull;TensorFlow.js</p>
     <details>
-        <p>I developed a handwritten digit classifier by designing a CNN with TensorFlow and training with <a href="https://www.kaggle.com/c/digit-recognizer/data" target="_blank">this</a> kaggle dataset. This is a quite popular and comparably easy task. The main goal was to focus on performance evaluation and model deployment strategies.</p>
-        <p>The model achieved a final accuracy of above 98% on the given training data. The training process was evaluated using TensorBoard, which provides great visualization features as shown below.</p>
-        <p>This was the simple CNN model architecture that was created by stacking a few Convolutional, Pooling and Dense Layers with a total of roughly 890 thousand trainable parameters:</p>
+        <p>I developed a handwritten digit classifier by designing a CNN with TensorFlow and training with <a href="https://www.kaggle.com/c/digit-recognizer/data" target="_blank">this</a> kaggle dataset. This is a quite popular and comparably easy task. The main goal was to focus on performance evaluation of different models and hyperparameters and model deployment strategies.</p>
+        <p>Trying out different models and hyperparameters I managed to achieve validation accuracies of roughly 99%. The training process was evaluated using TensorBoard, which provides great visualization features as shown below.</p>
+        <p>This was the first CNN model architecture that was created by stacking a few Convolutional, Pooling and Dense Layers with a total of roughly 890 thousand trainable parameters:</p>
         <details>
-            <img src="./images/projects/TensorBoardModel.png" alt="">
+            <img src="./images/projects/CNNDigitsBig.PNG" alt="">
         </details>
-        <p>And this was the training process and performance evaluation with TensorFLow after trying out a few different hyperparameters like differnt optimizers, activation functions, learning rates and number of epochs :</p>
+        <p>After trying out a few different hyperparameters like differnt optimizers, activation functions, learning rates and number of epochs for training it achieved an accuracy of 99%.</p>
+        <p>However, after removing and shrinking a few layers and adapting a few hyperparameters, a smaller model with roughly 220 thousand trainable parameters also managed to achieve validation accuracies of 99%:</p>
         <details>
-            <img src="./images/projects/TensorBoardTraining.png" alt="">
-            <p>It shows epoch accuracy and loss for the training data (blue) and the validation data (orange), which helps to avoid severe overfitting. With TensorBoard the training process can be analysed very deeply, you can even track specific parameters like biases etc.</p>
+            <img src="./images/projects/CNNDigitsSmall.PNG" alt="">
         </details>
-        <p>And the final confusion matrix to evaluate performance on the test set:</p>
+        <p>This is a direct comparison of the epoch accuracies of both networks using TensorBoard :</p>
+        <details>
+            <img src="./images/projects/CNNDigitPerformance.PNG" alt="">
+            <p>It shows epoch accuracy for the training data and the validation data for both CNNs, which helps to directly evaluate performance and avoid overfitting. With TensorBoard the training process can be analysed very deeply, you can even track specific parameters like biases etc.</p>
+        </details>
+        <p>By adapting the CNN architecture and the hyperparameters we managed to train a smaller and faster CNN without reducing performance, which is very important for actual deployment in real-time environments on embedded devices</p>
+        <p>We can also take a loog at the final confusion matrix to evaluate performance on a test set:</p>
         <details>
             <img src="./images/projects/ConfusionMatrix2.png" alt="">
+        </details>
+        <p>And look at a few wrong classifications to see if severe errors were made:</p>
+        <details>
+            <img src="./images/projects/WrongExamples.png" alt="">
         </details>
         <br>
         <p>By using TensorFlow.js the trained model can then be converted and deployed on this website, which is already implemented. However, I still need to work on a HTML canvas where you can draw your own digits as inputs to be evaluated by the model.</p>
@@ -256,7 +266,7 @@
     <hr>
 
     <h3>5) [Wip] Stock trading algorithm development with Deep Learning algorithms:</h3>
-    <p>&nbsp;&nbsp;&bull;Deep Learning Algorithms &nbsp;&nbsp;&bull;PyTorch &nbsp;&nbsp;&bull;TensorFlow  &nbsp;&nbsp;&bull;Stock Data Processing and Analysis</p>
+    <p>&nbsp;&nbsp;&bull;Deep Learning Algorithms &nbsp;&nbsp;&bull;PyTorch &nbsp;&nbsp;&bull;TensorFlow  &nbsp;&nbsp;&bull;Data Processing and Analysis &nbsp;&nbsp;&bull;Pandas</p>
     <details>
         <p>This is a personal adventure to try out a few different Machine Learning algorithms and frameworks for stock price predictions.</p>
         <p>The final goal would be to develop an algorithm that is able to do automated day-trading (ideally with profits) by evaluating stock signals and trends.</p> 
