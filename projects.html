@@ -6,6 +6,7 @@
     <title>FrustSolutions</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="icon" type="image/png" href="./images/icon.png">
+    <script src="DigitClassifier.js"></script>
 </head>
 <body>
     <header id="main-header">
@@ -222,16 +223,16 @@
             <p>It shows epoch accuracy for the training data and the validation data for both CNNs, which helps to directly evaluate performance and avoid overfitting. With TensorBoard the training process can be analysed very deeply, you can even track specific parameters like biases etc.</p>
         </details>
         <p>By adapting the CNN architecture and the hyperparameters we managed to train a smaller and faster CNN without reducing performance, which is very important for actual deployment in real-time environments on embedded devices</p>
-        <p>We can also take a loog at the final confusion matrix to evaluate performance on a test set:</p>
+        <p>We can also take a look at the confusion matrix to evaluate performance on a test set:</p>
         <details>
             <img src="./images/projects/ConfusionMatrix2.png" alt="">
         </details>
-        <p>And look at a few wrong classifications to see if severe errors were made:</p>
+        <p>And analyse a few wrong classifications to see if severe errors were made:</p>
         <details>
             <img src="./images/projects/WrongExamples.png" alt="">
         </details>
         <br>
-        <p>By using TensorFlow.js the trained model can then be converted and deployed on this website, which is already implemented. However, I still need to work on a HTML canvas where you can draw your own digits as inputs to be evaluated by the model.</p>
+        <p>By using TensorFlow.js the trained model can then be converted for deployment on this website, which is already implemented. However, I still need to work on <a href="DigitClassifier.html" target="blank">this HTML canvas</a> to input the drawn images to the model to make predictions.</p>
     </details>
     <hr>
 
