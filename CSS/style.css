@@ -29,7 +29,43 @@ body{
     padding-top: 50px;
     /* padding-left: 70px; */
     position: center;
+    animation: slideMe1 2s ease-in;
 }
+
+
+@keyframes slideMe1{
+    0%{
+        transform: translateX(-500px)
+    }
+    60%{
+        transform: translateX(20px)
+    }
+    100%{
+        transform: skewX(0deg);
+    }
+}
+
+
+@keyframes slideMe{
+    0%{
+        transform: skewX(5deg) translateY(-5000px);
+    }
+    60%{
+        transform: translatey(30px)
+    }
+    100%{
+        transform: skewX(0deg);
+    }
+}
+
+/* .myphoto{
+    float: left;
+    width: 10%;
+    padding: 0px;
+    padding-top: 50px;
+    position: center;
+    animation: slideMe 1.5s ease-in;
+} */
 
 #navbar{
     background-color: rgb(31, 37, 51);
@@ -256,6 +292,42 @@ body{
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
     padding: 20px;
     margin: 10px;
+    
+}
+
+
+.card0{
+    animation: slideMe 0.5s ease-in;
+}
+.card1{
+    animation: slideMe 0.8s ease-in;
+}
+.card2{
+    animation: slideMe 1.2s ease-in;
+}
+.card3{
+    animation: slideMe 1.5s ease-in;
+}
+.card4{
+    animation: slideMe 1.8s ease-in;
+}
+.card5{
+    animation: slideMe 2.1s ease-in;
+}
+.card6{
+    animation: slideMe 2.4s ease-in;
+}
+.card7{
+    animation: slideMe 2.7s ease-in;
+}
+.card8{
+    animation: slideMe 3s ease-in;
+}
+.card9{
+    animation: slideMe 3.3s ease-in;
+}
+.card10{
+    animation: slideMe 3.6s ease-in;
 }
 
 .flex {
