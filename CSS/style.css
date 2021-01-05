@@ -38,7 +38,7 @@ body{
         transform: translateX(-500px)
     }
     60%{
-        transform: translateX(20px)
+        transform: translateX(30px)
     }
     100%{
         transform: skewX(0deg);
@@ -65,6 +65,33 @@ body{
     padding-top: 50px;
     position: center;
     animation: slideMe 1.5s ease-in;
+} */
+
+@keyframes slideMe3{
+    0%{
+        transform: translateX(1000px);
+    }
+    60%{
+        transform: translateX(-30px)
+    }
+    100%{
+        transform: skewX(0deg);
+    }
+}
+
+
+.fade-in {
+    animation: slideMe3 ease 2.5s;
+}
+
+
+/* @keyframes fadeIn {
+    0% {
+        opacity:0;
+    }
+    100% {
+        opcity:1;
+    }
 } */
 
 #navbar{
