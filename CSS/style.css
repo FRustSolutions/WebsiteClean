@@ -82,6 +82,7 @@ body{
 
 .fade-in {
     animation: slideMe3 ease 2.5s;
+    /* filter: contrast(120%) drop-shadow(0px 5px 3px grey) */
 }
 
 
