@@ -24,12 +24,47 @@ body{
 
 .logocontainter{
     float: left;
-    width: 10%;
+    width: 15%;
     padding: 0px;
-    padding-top: 50px;
+    padding-top: 60px;
     /* padding-left: 70px; */
     position: center;
     animation: slideMe1 2s ease-in;
+}
+
+.logo{
+    filter: brightness(100%) contrast(100%) opacity(1);
+    animation: spin 6s;
+    /* animation: pulse 4s infinite; */
+}
+
+.logo:hover{
+    filter: brightness(100%) contrast(120%) opacity(1) drop-shadow(0px 5px 3px grey);
+}
+
+
+details{
+    cursor: pointer;
+}
+
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+@keyframes pulse{
+    0%{
+        filter: drop-shadow(0px 0px 3px rgb(241, 106, 106))
+    }
+    20%{
+        filter: drop-shadow(0px 0px 7px rgb(241, 106, 106))
+    }
+    40%{
+        filter: drop-shadow(0px 0px 10px rgb(241, 106, 106))
+    }
+    70%{
+        filter: drop-shadow(0px 0px 15px rgb(241, 106, 106))
+    }
+    100%{
+        /* filter: drop-shadow(0px 0px 7px rgb(241, 106, 106)) */
+    }
 }
 
 
