@@ -34,7 +34,7 @@ body{
 
 .logo{
     filter: brightness(100%) contrast(100%) opacity(1);
-    animation: spin 6s;
+    animation: spin 2s linear;
     /* animation: pulse 4s infinite; */
 }
 
@@ -116,10 +116,31 @@ details{
 
 
 .fade-in {
-    animation: slideMe3 ease 2.5s;
-    /* filter: contrast(120%) drop-shadow(0px 5px 3px grey) */
+    height: 350px;
+    width: 270px;
+    display: fit-content;
+    background-image: url(../images/standing2.png);
+    /* background-color: blue; */
+    /* background-size: cover; */
+    filter: brightness(100%) contrast(120%);
+    animation: slideMe3 ease 2s, imageswap ease 3s;;
+    filter: contrast(120%)
 }
 
+@keyframes imageswap {
+    0% {
+    }
+    30%{
+        background-image: url(../images/Robot.png);
+        filter: opacity(0.5) contrast(120%)
+    }
+    71%{
+        background-image: url(../images/standing2.png);
+    }
+    100% {
+        opcity:1;
+    }
+}
 
 /* @keyframes fadeIn {
     0% {
