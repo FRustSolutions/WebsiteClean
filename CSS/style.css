@@ -122,23 +122,25 @@ details{
     background-image: url(../images/standing2.png);
     /* background-color: blue; */
     /* background-size: cover; */
-    filter: brightness(100%) contrast(120%);
+    filter: brightness(100%) contrast(110%);
     animation: slideMe3 ease 2s, imageswap ease 3s;;
-    filter: contrast(120%)
 }
 
 @keyframes imageswap {
-    0% {
+    20% {
+        filter: opacity(0.2)
     }
     30%{
         background-image: url(../images/Robot.png);
-        filter: opacity(0.5) contrast(120%)
+        filter: opacity(0.5) contrast(110%)
+    }
+    50%{
+        /* background-image: url(../images/Robot.png); */
+        filter: opacity(0.7) contrast(110%)
     }
     71%{
         background-image: url(../images/standing2.png);
-    }
-    100% {
-        opcity:1;
+        filter: opacity(1) contrast(110%)
     }
 }
 
