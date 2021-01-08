@@ -148,96 +148,100 @@
     <br>
     <h3 id="skillheader">And these are some of the projects that I worked on throughout the past months:</h3>
     <hr>
-    <h3>1) Covid-19 detection on lung CTs: Combining Computer Vision and Deep Learning with Python:</h3>
-    <p> &nbsp;&nbsp;&bull;CNNs  &nbsp;&nbsp;&bull;CNN Training  &nbsp;&nbsp;&bull;PyTorch  &nbsp;&nbsp;&bull;Performance Evaluation  &nbsp;&nbsp;&bull;Transfer Learning  &nbsp;&nbsp;&bull;Fine Tuning  &nbsp;&nbsp;&bull;Computer Vision  &nbsp;&nbsp;&bull;Image Processing  &nbsp;&nbsp;&bull;Data augmentation  &nbsp;&nbsp;&bull;OpenCV</p>
-    <img src="./images/Coviddetector2.png" class="projimg" alt="Oops"><br><br>
-    <details>
-        <p>One project I am especially proud of is the Covid-19 detector for lung CTs that I developed with Computer Vision and Deep Learning Tools in Python.</p>
-        <p>The detector achieved an impressive classification accuracy of about 97% on official test datasets, which highly exceeds average radiologist performance:</p>
-        <!-- <img src="./images/Coviddetector2.png" alt="Oops"> -->
-        <!-- <br> -->
-        <p>The CT images are pre-processed for segmentation and feature enhancement unsing Python in combination with OpenCV and NumPy.</p>
-        <p>The pre-processed images were then used to train multiple different Convolutional Neural Network (CNN) for the classification task using PyTorch.</p>
-        <p>The models with best performance were then further fine-tuned and re-evaluated until the final result was achieved.</p>
-        <p>Taking part at the public Covid-19 detection challenge at <a href="https://covid-ct.grand-challenge.org/CT-diagnosis-of-COVID-19/" target="_blank">grand-challenge.org</a>, the final model outperformed all candidates on the Leaderboard on the official test-set.</p>
-        <p>The final performance measurements for this task were:</p>
-
-        <ul class=performancelist">
-            <li>Total Accuracy:  0.9704</li>
-            <li>F1-Score:        0.9697</li>
-            <li>AUC:             0.9707</li>
-        </ul>
-    </details>
-    <h3><a href="./images/CovidClassifierPublication.pdf" target="_blank">This paper</a> provides detailed information on the research and development process.</h3>
-    <!-- <details>
-        <!-- <iframe src="./images/CovidClassifierPublication.pdf"  width="90%" height="800px" frameborder="1"></iframe> 
-    </details> -->
-    <hr>
-
-    <h3>2) Optical Character Recognition (OCR) for hand-written digits with CNNs in TensorFlow including evaluation with TensorBoard and deployment on website with TensorFlow.js:</h3>
-    
-    <!-- <script type="module" src="TFmodel.js"></script>  -->
-
-    <!-- <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@2.0.0/dist/tf.min.js"></script>
-
-    <script>
-        // https://www.youtube.com/watch?v=Y_XM3Bu-4yc&ab_channel=Fireship&t=166s
-        // https://towardsdatascience.com/how-to-deploy-tensorflow-models-to-the-web-81da150f87f7
-        async function load() {
-            const model = await tf.loadLayersModel('model.json');
-            return model;
-        };
-
-        // function predict(model) {
-        //     // code to connect to the <input> given value will go here (just not yet)
-        //     const inputTensor = tf.tensor([parseInt(userInput)]);  // and convert it to a tensor
-
-        //     // now lets make the prediction
-        //     model.then(model => {
-        //     let result = model.predict(inputTensor);  // make prediction
-        //     result = result.round().dataSync()[0];  // round and get value
-        //     alert(result ? "odd" : "even");  // creates pop-up
-        //     });
-        // };
-
-        const model = load();
-        console.log('script executed')
-        console.log(model)
-    </script> -->
-
-
-    <p>&nbsp;&nbsp;&bull;CNN Design  &nbsp;&nbsp;&bull;CNN Training  &nbsp;&nbsp;&bull;TensorFlow  &nbsp;&nbsp;&bull;Keras &nbsp;&nbsp;&bull;Performance Evaluation  &nbsp;&nbsp;&bull;Training Optimization &nbsp;&nbsp;&bull;Hyperparameter Tuning &nbsp;&nbsp;&bull;TensorBoard  &nbsp;&nbsp;&bull;Model Deployment  &nbsp;&nbsp;&bull;TensorFlow.js</p>
-    <img src="./images/Digits.PNG" class="projimg" alt=""><br><br>
-    <details> 
-        <p>I developed a handwritten digit classifier by designing a CNN with TensorFlow and training with <a href="https://www.kaggle.com/c/digit-recognizer/data" target="_blank">this</a> kaggle dataset. This is a quite popular and comparably easy task. The main goal was to focus on performance evaluation of different models and hyperparameters and model deployment.</p>
-        <p>By trying out different models and hyperparameters, I managed to achieve validation accuracies of roughly 99%. The training process was evaluated using TensorBoard, which provides great visualization features as shown below.</p>
-        <p>This was the first CNN model architecture that was created by stacking a few Convolutional, Pooling and Dense Layers with a total of roughly 890 thousand trainable parameters:</p>
+    <div class="card">
+        <h3>1) Covid-19 detection on lung CTs: Combining Computer Vision and Deep Learning with Python:</h3>
+        <p> &nbsp;&nbsp;&bull;CNNs  &nbsp;&nbsp;&bull;CNN Training  &nbsp;&nbsp;&bull;PyTorch  &nbsp;&nbsp;&bull;Performance Evaluation  &nbsp;&nbsp;&bull;Transfer Learning  &nbsp;&nbsp;&bull;Fine Tuning  &nbsp;&nbsp;&bull;Computer Vision  &nbsp;&nbsp;&bull;Image Processing  &nbsp;&nbsp;&bull;Data augmentation  &nbsp;&nbsp;&bull;OpenCV</p>
+        <img src="./images/Coviddetector2.png" class="projimg" alt="Oops"><br><br>
         <details>
-            <img src="./images/projects/CNNDigitsBig.PNG" alt="">
+            <p>One project I am especially proud of is the Covid-19 detector for lung CTs that I developed with Computer Vision and Deep Learning Tools in Python.</p>
+            <p>The detector achieved an impressive classification accuracy of about 97% on official test datasets, which highly exceeds average radiologist performance:</p>
+            <!-- <img src="./images/Coviddetector2.png" alt="Oops"> -->
+            <!-- <br> -->
+            <p>The CT images are pre-processed for segmentation and feature enhancement unsing Python in combination with OpenCV and NumPy.</p>
+            <p>The pre-processed images were then used to train multiple different Convolutional Neural Network (CNN) for the classification task using PyTorch.</p>
+            <p>The models with best performance were then further fine-tuned and re-evaluated until the final result was achieved.</p>
+            <p>Taking part at the public Covid-19 detection challenge at <a href="https://covid-ct.grand-challenge.org/CT-diagnosis-of-COVID-19/" target="_blank">grand-challenge.org</a>, the final model outperformed all candidates on the Leaderboard on the official test-set.</p>
+            <p>The final performance measurements for this task were:</p>
+
+            <ul class=performancelist">
+                <li>Total Accuracy:  0.9704</li>
+                <li>F1-Score:        0.9697</li>
+                <li>AUC:             0.9707</li>
+            </ul>
         </details>
-        <p>After trying out a few different hyperparameters like differnt optimizers, activation functions, learning rates and number of epochs for training it achieved an accuracy of 99%.</p>
-        <p>However, after removing and shrinking a few layers and adapting a few hyperparameters, a smaller model with roughly 220 thousand trainable parameters also managed to achieve validation accuracies of 99%:</p>
-        <details>
-            <img src="./images/projects/CNNDigitsSmall.PNG" alt="">
+        <h3><a href="./images/CovidClassifierPublication.pdf" target="_blank">This paper</a> provides detailed information on the research and development process.</h3>
+        <!-- <details>
+            <!-- <iframe src="./images/CovidClassifierPublication.pdf"  width="90%" height="800px" frameborder="1"></iframe> 
+        </details> -->
+        <hr>
+    </div>
+
+    <div class="card">
+        <h3>2) Optical Character Recognition (OCR) for hand-written digits with CNNs in TensorFlow including evaluation with TensorBoard and deployment on website with TensorFlow.js:</h3>
+        
+        <!-- <script type="module" src="TFmodel.js"></script>  -->
+
+        <!-- <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@2.0.0/dist/tf.min.js"></script>
+
+        <script>
+            // https://www.youtube.com/watch?v=Y_XM3Bu-4yc&ab_channel=Fireship&t=166s
+            // https://towardsdatascience.com/how-to-deploy-tensorflow-models-to-the-web-81da150f87f7
+            async function load() {
+                const model = await tf.loadLayersModel('model.json');
+                return model;
+            };
+
+            // function predict(model) {
+            //     // code to connect to the <input> given value will go here (just not yet)
+            //     const inputTensor = tf.tensor([parseInt(userInput)]);  // and convert it to a tensor
+
+            //     // now lets make the prediction
+            //     model.then(model => {
+            //     let result = model.predict(inputTensor);  // make prediction
+            //     result = result.round().dataSync()[0];  // round and get value
+            //     alert(result ? "odd" : "even");  // creates pop-up
+            //     });
+            // };
+
+            const model = load();
+            console.log('script executed')
+            console.log(model)
+        </script> -->
+
+
+        <p>&nbsp;&nbsp;&bull;CNN Design  &nbsp;&nbsp;&bull;CNN Training  &nbsp;&nbsp;&bull;TensorFlow  &nbsp;&nbsp;&bull;Keras &nbsp;&nbsp;&bull;Performance Evaluation  &nbsp;&nbsp;&bull;Training Optimization &nbsp;&nbsp;&bull;Hyperparameter Tuning &nbsp;&nbsp;&bull;TensorBoard  &nbsp;&nbsp;&bull;Model Deployment  &nbsp;&nbsp;&bull;TensorFlow.js</p>
+        <img src="./images/Digits.PNG" class="projimg" alt=""><br><br>
+        <details> 
+            <p>I developed a handwritten digit classifier by designing a CNN with TensorFlow and training with <a href="https://www.kaggle.com/c/digit-recognizer/data" target="_blank">this</a> kaggle dataset. This is a quite popular and comparably easy task. The main goal was to focus on performance evaluation of different models and hyperparameters and model deployment.</p>
+            <p>By trying out different models and hyperparameters, I managed to achieve validation accuracies of roughly 99%. The training process was evaluated using TensorBoard, which provides great visualization features as shown below.</p>
+            <p>This was the first CNN model architecture that was created by stacking a few Convolutional, Pooling and Dense Layers with a total of roughly 890 thousand trainable parameters:</p>
+            <details>
+                <img src="./images/projects/CNNDigitsBig.PNG" alt="">
+            </details>
+            <p>After trying out a few different hyperparameters like differnt optimizers, activation functions, learning rates and number of epochs for training it achieved an accuracy of 99%.</p>
+            <p>However, after removing and shrinking a few layers and adapting a few hyperparameters, a smaller model with roughly 220 thousand trainable parameters also managed to achieve validation accuracies of 99%:</p>
+            <details>
+                <img src="./images/projects/CNNDigitsSmall.PNG" alt="">
+            </details>
+            <p>This is a direct comparison of the epoch accuracies of both networks using TensorBoard :</p>
+            <details>
+                <img src="./images/projects/CNNDigitPerformance.PNG" alt="">
+                <p>It shows epoch accuracy for the training data and the validation data for both CNNs, which helps to directly evaluate performance and avoid overfitting. With TensorBoard the training process can be analysed very deeply, you can even track specific parameters like biases etc.</p>
+            </details>
+            <p>By adapting the CNN architecture and the hyperparameters we managed to train a smaller and faster CNN without reducing performance, which is very important for actual deployment in real-time environments on embedded devices</p>
+            <p>We can also take a look at the confusion matrix to evaluate performance on a test set:</p>
+            <details>
+                <img src="./images/projects/ConfusionMatrix2.png" alt="">
+            </details>
+            <p>And analyse a few wrong classifications to see if severe errors were made:</p>
+            <details>
+                <img src="./images/projects/WrongExamples.png" alt="">
+            </details>
+            <br>
+            <p>By using TensorFlow.js the trained model can then be converted for deployment on this website, which is already implemented. However, I still need to work on <a href="DigitClassifier.html" target="blank">this HTML canvas</a> to input the drawn images to the model to make predictions.</p>
         </details>
-        <p>This is a direct comparison of the epoch accuracies of both networks using TensorBoard :</p>
-        <details>
-            <img src="./images/projects/CNNDigitPerformance.PNG" alt="">
-            <p>It shows epoch accuracy for the training data and the validation data for both CNNs, which helps to directly evaluate performance and avoid overfitting. With TensorBoard the training process can be analysed very deeply, you can even track specific parameters like biases etc.</p>
-        </details>
-        <p>By adapting the CNN architecture and the hyperparameters we managed to train a smaller and faster CNN without reducing performance, which is very important for actual deployment in real-time environments on embedded devices</p>
-        <p>We can also take a look at the confusion matrix to evaluate performance on a test set:</p>
-        <details>
-            <img src="./images/projects/ConfusionMatrix2.png" alt="">
-        </details>
-        <p>And analyse a few wrong classifications to see if severe errors were made:</p>
-        <details>
-            <img src="./images/projects/WrongExamples.png" alt="">
-        </details>
-        <br>
-        <p>By using TensorFlow.js the trained model can then be converted for deployment on this website, which is already implemented. However, I still need to work on <a href="DigitClassifier.html" target="blank">this HTML canvas</a> to input the drawn images to the model to make predictions.</p>
-    </details>
-    <hr>
+        <hr>
+    </div>
 
     <!-- <h3>4) Natural Language Processing model (translator) from TensorFlow Hub to deploy on this website:</h3>
     <p>&nbsp;&nbsp;&bull;Pre-trained models &nbsp;&nbsp;&bull;Model Deployment &nbsp;&nbsp;&bull;TensorFlow.js &nbsp;&nbsp;&bull;JS &nbsp;&nbsp;&bull;HTML</p>
@@ -246,39 +250,45 @@
     </details>
     <hr> -->
 
-    <h3>3) [Wip] Deep Learning algorithm development to create a Cartoon Avatar from a selfie with facial feature recognition:</h3>
-    <p>&nbsp;&nbsp;&bull;Face detection &nbsp;&nbsp;&bull;Feature detection &nbsp;&nbsp;&bull;CNN &nbsp;&nbsp;&bull;Transfer Learning &nbsp;&nbsp;&bull;TensorFlow</p>
-    <img src="./images/CelebA.png" class="projimg" alt=""><br><br>
-    <details>
-        <p>The goal is to develop an algorithm that takes a picture of your face as an input and creates a cartoon avatar that matches your features. This is similar to what Bitmoji does very succesfully: </p>
+    <div class="card">
+        <h3>3) [Wip] Deep Learning algorithm development to create a Cartoon Avatar from a selfie with facial feature recognition:</h3>
+        <p>&nbsp;&nbsp;&bull;Face detection &nbsp;&nbsp;&bull;Feature detection &nbsp;&nbsp;&bull;CNN &nbsp;&nbsp;&bull;Transfer Learning &nbsp;&nbsp;&bull;TensorFlow</p>
+        <img src="./images/CelebA.png" class="projimg" alt=""><br><br>
         <details>
-            <img src="./images/bitmoji.jpg" alt="">
+            <p>The goal is to develop an algorithm that takes a picture of your face as an input and creates a cartoon avatar that matches your features. This is similar to what Bitmoji does very succesfully: </p>
+            <details>
+                <img src="./images/bitmoji.jpg" alt="">
+            </details>
+            <p>The idea is to use the <a href="https://www.kaggle.com/jessicali9530/celeba-dataset" target="_blank">CelebFaces Attributes (CelebA)</a> Dataset, providing descriptions for over 200,000 images of celebritiy faces and to follow these steps:</p>
+            <ul>
+                <li> Face detection: to sort out the images where no face can be detected, since some images are only side views or include other obstructions and pre-process the other images accordingly</li>
+                <li> Facial feature detection: train a CNN to match the face images to 40 binary attribute annotations (like beard: yes/no, bald: yes/no, ...) that are provided in the dataset. Transfer learning will probably come into play here.</li>
+                <li> Avatar creation: automatically create an avatar with building blocks matching these feature descriptions</li>
+            </ul>
         </details>
-        <p>The idea is to use the <a href="https://www.kaggle.com/jessicali9530/celeba-dataset" target="_blank">CelebFaces Attributes (CelebA)</a> Dataset, providing descriptions for over 200,000 images of celebritiy faces and to follow these steps:</p>
-        <ul>
-            <li> Face detection: to sort out the images where no face can be detected, since some images are only side views or include other obstructions and pre-process the other images accordingly</li>
-            <li> Facial feature detection: train a CNN to match the face images to 40 binary attribute annotations (like beard: yes/no, bald: yes/no, ...) that are provided in the dataset. Transfer learning will probably come into play here.</li>
-            <li> Avatar creation: automatically create an avatar with building blocks matching these feature descriptions</li>
-        </ul>
-    </details>
-    <hr>
+        <hr>
+    </div>
 
-    <h3>4) Portfolio Website Design & Development from scratch with JS, HTML & CSS:</h3>
-    <p>&nbsp;&nbsp;&bull;Web Design &nbsp;&nbsp;&bull;Web Development &nbsp;&nbsp;&bull;Web Hosting &nbsp;&nbsp;&bull;JavaScript &nbsp;&nbsp;&bull;HTML &nbsp;&nbsp;&bull;CSS &nbsp;&nbsp;&bull;Git &nbsp;&nbsp;&bull;GitHub</p>
-    <img src="./images/website.PNG" class="projimg" alt=""><br><br>
-    <details>
-        <p>I taught myself some frontend web-development skills and coded this personal portfolio website from scratch in raw JS, HTML and CSS. I will expand my web-development skills with additional libraries and frameworks in the future. </p>
-    </details>
-    <hr>
+    <div class="card">
+        <h3>4) Portfolio Website Design & Development from scratch with JS, HTML & CSS:</h3>
+        <p>&nbsp;&nbsp;&bull;Web Design &nbsp;&nbsp;&bull;Web Development &nbsp;&nbsp;&bull;Web Hosting &nbsp;&nbsp;&bull;JavaScript &nbsp;&nbsp;&bull;HTML &nbsp;&nbsp;&bull;CSS &nbsp;&nbsp;&bull;Git &nbsp;&nbsp;&bull;GitHub</p>
+        <img src="./images/website.PNG" class="projimg" alt=""><br><br>
+        <details>
+            <p>I taught myself some frontend web-development skills and coded this personal portfolio website from scratch in raw JS, HTML and CSS. I will expand my web-development skills with additional libraries and frameworks in the future. </p>
+        </details>
+        <hr>
+    </div>
 
-    <h3>5) Advent of Code 2020 with Python/C++:</h3>
-    <p>&nbsp;&nbsp;&bull;(Object Oriented) Programming &nbsp;&nbsp;&bull;Logical Thinking &nbsp;&nbsp;&bull;Problem Solving</p>
-    <img src="./images/AoC.png" class="projimg" alt=""><br><br>
-    <details>
-        <p>To keep my programming skills with Python and C++ up to date, I am currently working thorugh the tasks at <a target="_blank" href="https://adventofcode.com/2020/about">AdventOfcode.com</a>.</p>
-        <p>I will post some of the results on <a href="https://github.com/FRustSolutions/AdventOfCode20" target="blank">My Github</a>.</p>
-    </details>
-    <hr>
+    <div class="card">
+        <h3>5) Advent of Code 2020 with Python/C++:</h3>
+        <p>&nbsp;&nbsp;&bull;(Object Oriented) Programming &nbsp;&nbsp;&bull;Logical Thinking &nbsp;&nbsp;&bull;Problem Solving</p>
+        <img src="./images/AoC.png" class="projimg" alt=""><br><br>
+        <details>
+            <p>To keep my programming skills with Python and C++ up to date, I am currently working thorugh the tasks at <a target="_blank" href="https://adventofcode.com/2020/about">AdventOfcode.com</a>.</p>
+            <p>I will post some of the results on <a href="https://github.com/FRustSolutions/AdventOfCode20" target="blank">My Github</a>.</p>
+        </details>
+        <hr>
+    </div>
 
     <!-- <h3>6) [Wip] Stock trading algorithm development with Deep Learning algorithms:</h3>
     <p>&nbsp;&nbsp;&bull;Deep Learning Algorithms &nbsp;&nbsp;&bull;PyTorch &nbsp;&nbsp;&bull;TensorFlow  &nbsp;&nbsp;&bull;Data Processing and Analysis &nbsp;&nbsp;&bull;Pandas</p>
@@ -292,16 +302,18 @@
     </details>
     <hr> -->
 
-    <h3>6) Rock Paper Scissors Spock with Python and tkinter UI:</h3>
-    <p>&nbsp;&nbsp;&bull;Python &nbsp;&nbsp;&bull;Object Oriented Programming &nbsp;&nbsp;&bull;Game Functionality &nbsp;&nbsp;&bull;GUI Design &nbsp;&nbsp;&bull;tkinter</p>
-    <img src="./images/RPS.png" class="projimg" alt=""><br><br>
-    <details>
-        <p>This was just a fun project to do some OOP in Python to develop basic game functionality and some additional features.</p>
-        <p>The Python code and the additional files can be found on <a href="https://github.com/FRustSolutions/PythonProjects/tree/main/RockPaperScissors" target="blank">My Github</a>.</p>
-        <p>The simple UI is designed in tkinter: it focusses on functionality.</p>
-        <img src="./images/projects/PythonGame-1.png" alt="">
-    </details>
-    <hr>
+    <div class="card">
+        <h3>6) Rock Paper Scissors Spock with Python and tkinter UI:</h3>
+        <p>&nbsp;&nbsp;&bull;Python &nbsp;&nbsp;&bull;Object Oriented Programming &nbsp;&nbsp;&bull;Game Functionality &nbsp;&nbsp;&bull;GUI Design &nbsp;&nbsp;&bull;tkinter</p>
+        <img src="./images/RPS.png" class="projimg" alt=""><br><br>
+        <details>
+            <p>This was just a fun project to do some OOP in Python to develop basic game functionality and some additional features.</p>
+            <p>The Python code and the additional files can be found on <a href="https://github.com/FRustSolutions/PythonProjects/tree/main/RockPaperScissors" target="blank">My Github</a>.</p>
+            <p>The simple UI is designed in tkinter: it focusses on functionality.</p>
+            <img src="./images/projects/PythonGame-1.png" alt="">
+        </details>
+        <hr>
+    </div>
 
     
     <!-- <h3>7) Control System Development with Matlab/Simulink</h3>
